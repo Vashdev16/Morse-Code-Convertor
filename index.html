@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <title>Morse Code Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <!-- Dark mode button -->
+            <button id="darkModeButton" onclick="toggleDarkMode()">
+                <span class="dark-mode-icon">🌛</span> Dark Mode
+            </button>
+            
+
+            <h1>Morse Code Converter</h1>
+            <label for="textInput"><b>Enter text:</b></label>
+            <textarea id="textInput" rows="4" cols="50"></textarea>
+            <div class="buttons">
+                <button onclick="convertToMorse()">Convert to Morse Code</button>
+                <button onclick="convertToText()">Convert to Text</button>
+            </div>
+            <label for="morseOutput"><b>Output:</b></label>
+            <textarea id="morseOutput" rows="4" cols="50" readonly></textarea>
+            
+        
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
